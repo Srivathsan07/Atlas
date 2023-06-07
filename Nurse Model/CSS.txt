@@ -1,0 +1,32 @@
+.border_bottom_none{border-bottom: none;}
+.back_color_blue{background: #F9FAFB;border: 1px solid #DFE4E4;box-sizing: border-box;border-radius: 10px;}
+.personal_top{margin-top: 0px;}
+.float_lef{float: left;width: 100%;}
+.margin_30{margin-top: 30px;}
+.nurse_label label{width: 100px; padding-top: 10px;}
+.nurse_label input[type="text"]{width: 135px;}
+.nurse_label select{width: 135px;}
+.nurse_label1 label{width: 70px; padding-top: 10px;}
+.nurse_label1 select{width: 140px;}
+.nurse_label2 label{width: 24px; padding-top: 10px;}
+.nurse_label2 select {width: 130px;margin-left: 20px;}
+.nurse_label2 img.grey_minus{padding-left: 30px;padding-top: 10px;}
+.nurse_label2 img.blue_minus{padding-left: 15px;padding-top: 10px;}
+.checkbox_width .checkbox_input.input_lable{width: 100%;padding: 10px 0px 40px;}
+.letter_width select{width: 280px;}
+.email_bottom{padding-bottom: 20px;}
+.nurse_print_button{display: flex;width: 100%;justify-content: center;margin-bottom: 30px;}
+.nurse_print_button button{padding: 9px 24px; background: #25D4E3;border-radius: 7px;font-weight: bold;font-size: 15px;line-height: 18px;color: #FFFFFF;}
+.nurse_detail_height{height: 90px;margin-top: 15px;background: #EFF6F6;padding-top: 13px!important;}
+.update_top{padding-top: 10px;}
+.update_bottom{border-bottom: 1px solid #E6E6E6; padding-bottom: 30px;}
+.personal_tops{padding:0px;}
+.padd_left25{padding-left: 25px;}
+.color_green{background: #2ECC71;color: #FFFFFF;border-radius: 7px;}
+.typedetails_panel.booking_type ul {padding: 10px 0px 0px;border-bottom: 1px solid #E6E6E6;border-radius: 10px;}
+.Prescription_padd{padding-left: 10px;}
+.upload_pic{padding: 9px 13px; font-weight: bold;font-size: 11px;line-height: 13px;color: #FFFFFF;background: #25D4E3;border-radius: 5px;}
+
+@media only screen and (max-width: 767px) {
+    .nurse_label2 select {margin-left: 0px;margin-bottom: 10px;width: 55%;}
+}

@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Atlas Immunization</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="images/logo-icon.png">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/custom.css">
+      <link rel="stylesheet" href="css/datepicker_min.css">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/responsive.css">
+   </head>
+   <body>
+      <div class="full_wrapper">
+      <div class="superversion_layout">
+      <!-- Aside -->
+      <div class=" myaside">
+         <div id="aside_bar">
+            <div class="logo_headerbar">
+               <div class="logo_maintain">
+                  <img src="./images/logo-icon.png" class="miniversion_logo" alt="logo" />
+                  <img src="./images/logo.png" class="fullversion_logo" alt="logo" />
+               </div>
+               <span class="hamburger_menu">
+               <img src="./images/menu_bar.png" alt="bar" />
+               </span>
+               <span class="mob_hamburger_close">
+               <i class="fa fa-times" aria-hidden="true"></i>
+               </span>
+            </div>
+            <div class="asider_menubar">
+               <div class="menubar_lister normal_menus">
+                  <ul>
+                     <li class="multi_submenu">
+                        <a>
+                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M16.2356 2.00712H15.9945V1.51001C15.9945 1.21878 15.7584 0.982666 15.4672 0.982666C15.1759 0.982666 14.9398 1.21878 14.9398 1.51001V2.00712H13.3937V1.51001C13.3937 1.21878 13.1576 0.982666 12.8664 0.982666C12.5751 0.982666 12.339 1.21878 12.339 1.51001V2.00712H10.793V1.51001C10.793 1.21878 10.5569 0.982666 10.2656 0.982666C9.97439 0.982666 9.73828 1.21878 9.73828 1.51001V2.00712H8.26172V1.51001C8.26172 1.21878 8.02561 0.982666 7.73438 0.982666C7.44314 0.982666 7.20703 1.21878 7.20703 1.51001V2.00712H5.66093V1.51001C5.66093 1.21878 5.42482 0.982666 5.13359 0.982666C4.84235 0.982666 4.60624 1.21878 4.60624 1.51001V2.00712H3.06018V1.51001C3.06018 1.21878 2.82407 0.982666 2.53283 0.982666C2.2416 0.982666 2.00549 1.21878 2.00549 1.51001V2.00712H1.76435C0.791473 2.00712 0 2.79859 0 3.77144V15.2531C0 16.226 0.791473 17.0174 1.76435 17.0174H16.2356C17.2085 17.0174 18 16.226 18 15.2531V3.77144C18 2.79859 17.2085 2.00712 16.2356 2.00712ZM1.76435 3.06181H2.00549V3.55892C2.00549 3.85015 2.2416 4.08626 2.53283 4.08626C2.82407 4.08626 3.06018 3.85015 3.06018 3.55892V3.06181H4.60628V3.55892C4.60628 3.85015 4.84239 4.08626 5.13362 4.08626C5.42486 4.08626 5.66096 3.85015 5.66096 3.55892V3.06181H7.20703V3.55892C7.20703 3.85015 7.44314 4.08626 7.73438 4.08626C8.02561 4.08626 8.26172 3.85015 8.26172 3.55892V3.06181H9.73828V3.55892C9.73828 3.85015 9.97439 4.08626 10.2656 4.08626C10.5569 4.08626 10.793 3.85015 10.793 3.55892V3.06181H12.3391V3.55892C12.3391 3.85015 12.5752 4.08626 12.8664 4.08626C13.1576 4.08626 13.3938 3.85015 13.3938 3.55892V3.06181H14.9399V3.55892C14.9399 3.85015 15.176 4.08626 15.4672 4.08626C15.7584 4.08626 15.9945 3.85015 15.9945 3.55892V3.06181H16.2357C16.627 3.06181 16.9453 3.38015 16.9453 3.77147V4.81962H1.05469V3.77147C1.05469 3.38015 1.37303 3.06181 1.76435 3.06181ZM16.2356 15.9627H1.76435C1.37303 15.9627 1.05469 15.6444 1.05469 15.2531V5.87431H16.9453V15.2531C16.9453 15.6444 16.627 15.9627 16.2356 15.9627Z"
+                                 fill="#25D4E3" />
+                              <path
+                                 d="M12.2767 9.3425H10.5799V7.64551C10.5799 7.35427 10.3438 7.11816 10.0525 7.11816H7.94787C7.65663 7.11816 7.42052 7.35427 7.42052 7.64551V9.3425H5.72339C5.43215 9.3425 5.19604 9.57861 5.19604 9.86985V11.9745C5.19604 12.2658 5.43215 12.5019 5.72339 12.5019H7.42052V14.1989C7.42052 14.4901 7.65663 14.7262 7.94787 14.7262H10.0525C10.3438 14.7262 10.5799 14.4901 10.5799 14.1989V12.5019H12.2767C12.568 12.5019 12.8041 12.2658 12.8041 11.9745V9.86985C12.8041 9.57861 12.568 9.3425 12.2767 9.3425ZM11.7494 11.4472H10.0525C9.7613 11.4472 9.52519 11.6833 9.52519 11.9745V13.6715H8.47521V11.9745C8.47521 11.6833 8.2391 11.4472 7.94787 11.4472H6.25073V10.3972H7.94787C8.2391 10.3972 8.47521 10.161 8.47521 9.86981V8.17282H9.52519V9.86981C9.52519 10.161 9.7613 10.3972 10.0525 10.3972H11.7494V11.4472Z"
+                                 fill="#25D4E3" />
+                           </svg>
+                           <span>Appointment Booking</span><i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="submenu_bar">
+                           <li>
+                              <a href="immunizations.html">
+                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="7" cy="7" r="6" fill="transparent" stroke="#BEC4D2" stroke-width="2" />
+                                 </svg>
+                                 <span> Immunizations</span>
+                              </a>
+                           </li>
+                           <li>
+                              <a href="medical_service.html">
+                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="7" cy="7" r="6" fill="transparent" stroke="#BEC4D2" stroke-width="2" />
+                                 </svg>
+                                 <span> Medical Services</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a   href="booked_appointments.html">
+                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M13.1249 18C10.437 18 8.25 15.813 8.25 13.1249C8.25 10.437 10.437 8.25 13.1249 8.25C15.813 8.25 18 10.437 18 13.1249C18 15.813 15.813 18 13.1249 18ZM13.1249 9.375C11.0571 9.375 9.375 11.0571 9.375 13.1249C9.375 15.1927 11.0571 16.875 13.1249 16.875C15.1927 16.875 16.875 15.1927 16.875 13.1249C16.875 11.0571 15.1927 9.375 13.1249 9.375Z"
+                                 fill="#BEC4D2" />
+                              <path
+                                 d="M14.4376 15C14.2935 15 14.1496 14.9452 14.04 14.8349L12.7276 13.5225C12.6218 13.4167 12.5625 13.2742 12.5625 13.1249V11.0625C12.5625 10.752 12.8145 10.5 13.125 10.5C13.4355 10.5 13.6875 10.752 13.6875 11.0625V12.8917L14.835 14.0392C15.0547 14.259 15.0547 14.6152 14.835 14.8349C14.7256 14.9452 14.5815 15 14.4376 15Z"
+                                 fill="#BEC4D2" />
+                              <path
+                                 d="M6.75005 7.49995C4.68228 7.49995 3 5.81781 3 3.75005C3 1.68228 4.68228 0 6.75005 0C8.81781 0 10.5001 1.68228 10.5001 3.75005C10.5001 5.81781 8.81781 7.49995 6.75005 7.49995ZM6.75005 1.125C5.3026 1.125 4.125 2.30246 4.125 3.75005C4.125 5.19749 5.3026 6.37495 6.75005 6.37495C8.19749 6.37495 9.37509 5.19749 9.37509 3.75005C9.37509 2.30246 8.19749 1.125 6.75005 1.125Z"
+                                 fill="#BEC4D2" />
+                              <path
+                                 d="M7.09497 15.75H0.5625C0.251999 15.75 0 15.498 0 15.1875V12.5625C0 10.5982 1.59824 9 3.56245 9H7.83751C8.14801 9 8.40001 9.252 8.40001 9.5625C8.40001 9.873 8.14801 10.125 7.83751 10.125H3.56245C2.21855 10.125 1.125 11.2186 1.125 12.5625V14.625H7.09497C7.40547 14.625 7.65747 14.877 7.65747 15.1875C7.65747 15.498 7.40547 15.75 7.09497 15.75Z"
+                                 fill="#BEC4D2" />
+                           </svg>
+                           <span> Booked Appointments</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="invoice_history.html">
+                           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M17.536 5.66462C16.9191 5.04777 15.9155 5.0478 15.2984 5.66476C15.1087 5.85471 13.897 7.06736 13.7119 7.25263V3.07357C13.7119 2.65099 13.5473 2.25373 13.2485 1.95493L11.757 0.463359C11.4582 0.164531 11.0609 0 10.6383 0H1.58301C0.710676 0 0.000976562 0.709699 0.000976562 1.58203V16.418C0.000976562 17.2903 0.710676 18 1.58301 18H12.1299C13.0022 18 13.7119 17.2903 13.7119 16.418V11.7292L17.5359 7.90196C18.1542 7.28371 18.1544 6.28295 17.536 5.66462ZM10.5479 1.05469C10.6475 1.05469 10.8395 1.03743 11.0112 1.20913L12.5028 2.7007C12.6701 2.86808 12.6573 3.05149 12.6573 3.16406H10.5479V1.05469ZM12.6572 16.418C12.6572 16.7087 12.4207 16.9453 12.1299 16.9453H1.58301C1.29223 16.9453 1.05566 16.7087 1.05566 16.418V1.58203C1.05566 1.29125 1.29223 1.05469 1.58301 1.05469H9.49316V3.69141C9.49316 3.98264 9.72927 4.21875 10.0205 4.21875H12.6572V8.30823C12.6572 8.30823 11.1014 9.86537 11.1014 9.86541L10.3559 10.6109C10.2981 10.6687 10.2544 10.7393 10.2285 10.817L9.48272 13.0543C9.41955 13.2438 9.46887 13.4528 9.61013 13.594C9.75156 13.7354 9.96057 13.7845 10.1498 13.7214L12.3871 12.9756C12.4648 12.9497 12.5354 12.9061 12.5932 12.8482L12.6572 12.7842V16.418ZM11.4746 10.9838L12.2203 11.7295L11.9355 12.0144L10.8168 12.3873L11.1897 11.2686L11.4746 10.9838ZM12.966 10.9836L12.2202 10.2378C12.6173 9.84038 14.3811 8.07511 14.7551 7.70073L15.5009 8.4465L12.966 10.9836ZM16.79 7.15634L16.2464 7.70041L15.5006 6.95464L16.0444 6.41039C16.2502 6.20476 16.5846 6.2048 16.7902 6.41039C16.9958 6.61605 16.9969 6.94944 16.79 7.15634Z"
+                                 fill="#BEC4D2" />
+                              <path
+                                 d="M10.02 5.27344H2.63721C2.34597 5.27344 2.10986 5.50955 2.10986 5.80078C2.10986 6.09202 2.34597 6.32812 2.63721 6.32812H10.02C10.3113 6.32812 10.5474 6.09202 10.5474 5.80078C10.5474 5.50955 10.3113 5.27344 10.02 5.27344Z"
+                                 fill="#BEC4D2" />
+                              <path
+                                 d="M7.91064 7.38281H2.63721C2.34597 7.38281 2.10986 7.61892 2.10986 7.91016C2.10986 8.20139 2.34597 8.4375 2.63721 8.4375H7.91064C8.20188 8.4375 8.43799 8.20139 8.43799 7.91016C8.43799 7.61892 8.20188 7.38281 7.91064 7.38281Z"
+                                 fill="#BEC4D2" />
+                              <path
+                                 d="M7.91064 9.49219H2.63721C2.34597 9.49219 2.10986 9.7283 2.10986 10.0195C2.10986 10.3108 2.34597 10.5469 2.63721 10.5469H7.91064C8.20188 10.5469 8.43799 10.3108 8.43799 10.0195C8.43799 9.7283 8.20188 9.49219 7.91064 9.49219Z"
+                                 fill="#BEC4D2" />
+                              <path
+                                 d="M7.91064 11.6016H2.63721C2.34597 11.6016 2.10986 11.8377 2.10986 12.1289C2.10986 12.4201 2.34597 12.6562 2.63721 12.6562H7.91064C8.20188 12.6562 8.43799 12.4201 8.43799 12.1289C8.43799 11.8377 8.20188 11.6016 7.91064 11.6016Z"
+                                 fill="#BEC4D2" />
+                              <path
+                                 d="M10.02 14.8359H6.85596C6.56472 14.8359 6.32861 15.072 6.32861 15.3633C6.32861 15.6545 6.56472 15.8906 6.85596 15.8906H10.02C10.3113 15.8906 10.5474 15.6545 10.5474 15.3633C10.5474 15.072 10.3113 14.8359 10.02 14.8359Z"
+                                 fill="#BEC4D2" />
+                           </svg>
+                           <span> Invoice History</span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="aside_copyrights">
+               <p>Copyright © 2019 Atlas Immunization</p>
+            </div>
+         </div>
+      </div>
+      <!-- //END Aside -->
+      <div class="aside_component">
+      <!-- Header -->
+      <div class="myheader">
+         <h2>Today’s Appointment</h2>
+         <div class="notification_card">
+            <span class="notification active">
+            <img src="./images/notification_bell.png" alt="bell">
+            </span>
+            <div class="myprofile_cards">
+               <div class="dropdown">
+                  <button id="button-basic" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                  <img src="./images/profile.png" alt="pro"></button>
+                  <ul class="dropdown-menu">
+                     <li role="menuitem mainchanger">
+                        <a class="dropdown-item" href="change_password.html">
+                           <div class=" myprofile_detail_wrapper">
+                              <div class="myprofile_img">
+                                 <img src="./images/profile.png" alt="pro">
+                              </div>
+                              <div class="myprofile_content">
+                                 <h3>George Bailey</h3>
+                                 <span>View Profile Information</span>
+                              </div>
+                              <i class="fa fa-angle-right" aria-hidden="true"></i>
+                           </div>
+                        </a>
+                     </li>
+                     <li role="menuitem"><a class="dropdown-item subitem" href="change_password.html">Change
+                        Password</a>
+                     </li>
+                     <li role=" menuitem"><a class="dropdown-item subitem" href="login.html">Logout <img
+                        src="./images/logout.png" alt="logout"></a></li>
+                  </ul>
+               </div>
+            </div>
+            <span class="mob_burger">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+         </div>
+      </div>
+      <!-- END Header -->
+      <div class="common_component">
+      <div class="myart_layerout">
+         <div class="atlas_layout_title head_flex hd-sub-g">
+            <h2>Appointment Detail</h2>
+            <div class="head_right_detail">
+               <div class="head-ryt-inner">
+                  <label class="lab-g">Health Care #</label>
+                  <h3 class="lab-det-g">1234567890</h3>
+               </div>
+               <div class="head-ryt-inner">
+                  <label class="lab-g">Name</label>
+                  <h3 class="lab-det-g">Esabella Ava</h3>
+               </div>
+               <div class="head-ryt-inner">
+                  <label class="lab-g">Gender</label>
+                  <h3 class="lab-det-g">Female</h3>
+               </div>
+               <div class="head-ryt-inner">
+                  <label class="lab-g">DOB </label>
+                  <h3 class="lab-det-g">01 / 31 / 1990</h3>
+               </div>
+               <div class="head-ryt-inner b-0">
+                  <label class="lab-g">Age</label>
+                  <h3 class="lab-det-g">30</h3>
+               </div>
+            </div>
+         </div>
+         <!-- Tab immunizations pills -->
+         <div class="fullwrapper_tabs_immunization">
+            <div class="tabs_immuzations_content tabs_immuzations">
+               <div class="tab-content">
+                  <!--TravelDetails-->
+                  <div id="TravelDetails" class="tab-pane fade in active">
+                     <div class="wayout_panel">
+                     	<div class="fullwrapper_tabs_immunization">
+        
+    <div class="tabs_immuzations_content">
+        <div class="">
+            
+            <div class="bgm_grey_panel">
+                <div class="change_formpassword">
+                    <div class="col-md-6 col-xs-12 col-sm-6 col-lg-6">
+                        <div class="altas_forms forms_viewlays">
+                            <label>Appointment Requested Date and Time</label>
+                            <div class="viewsdesc_tions">
+                                <label>Scheduled Date &amp; Time</label>
+                                <span>02/26/2020 &amp; 07:30 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="typedetails_panel">
+                <ul>
+                    <li><label>Booking Type</label><span>Immunization</span></li>
+                    <li><label>Booking Category</label><span>Travel</span></li>
+                    <li><label class="consult_width">Consultant Type</label><span>New Trip</span></li>
+                    
+                </ul>
+            </div>
+
+            <div class="child-count-sec-g">
+               <h2 class="p-hd-2"> Number of people travelling </h2>
+               <div class="typedetails_panel">
+                <ul>
+                    <li><label>Adult</label><span>2</span></li>
+                    <li><label>Children</label><span>-</span></li>
+                                                                         
+                </ul>
+            </div>
+            </div>
+
+            <div class="personal-info-sec">
+                <h2 class="detail-head-g">Travel Details <span class="sub-t-g">(This information will help with your personalized recommendation assessment)</span> </h2>
+                <div class="personal-inner-g">
+                    <div class="row">
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <label class="lab-g">Area</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <h3 class="lab-det-g">Urban</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <label class="lab-g">Accommodations</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <h3 class="lab-det-g">Private Home</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <label class="lab-g">Type of Trip</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <h3 class="lab-det-g">Holiday</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g m-0">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                 
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <label class="lab-g">Departure Date</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <h3 class="lab-det-g">20/02/2020</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <label class="lab-g">Return Date</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <h3 class="lab-det-g">24/02/2020</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <label class="lab-g">Total Length of Trip</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <h3 class="lab-det-g">Total Length of Trip</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g m-0">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <label class="lab-g">Are you travelling to more than one country?</label>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <h3 class="lab-det-g">yes</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g m-0">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                 
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="destination-sec">
+                <h2>Destination (s)</h2>
+                <div class="row">
+                    <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <label class="lab-g">Country</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <h3 class="lab-det-g">India</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <label class="lab-g">City</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <h3 class="lab-det-g">Chennai</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <label class="lab-g">Specific length of stay</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <h3 class="lab-det-g">04</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <label class="lab-g">Country</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <h3 class="lab-det-g">Australia</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <label class="lab-g">City</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <h3 class="lab-det-g">Sydney</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <label class="lab-g">Specific length of stay</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <h3 class="lab-det-g">05</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <label class="lab-g">Country</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <h3 class="lab-det-g">Malasia</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <label class="lab-g">City</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <h3 class="lab-det-g">Kuala Lumpur</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <label class="lab-g">Specific length of stay</label>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                <h3 class="lab-det-g">06</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="patient-info-det-g">
+                <div class="patient-info-hd-g">
+                    <h2>Patient 1</h2>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4" fill="none">
+                        <path d="M11.5624 0.439453H18.905C19.5083 0.439453 20 0.927259 20 1.53067V2.47571C20 3.07848 19.5083 3.56433 18.905 3.56433H11.5626H8.43756H1.09382C0.490732 3.56433 0 3.07864 0 2.47571V1.53067C0 0.927259 0.490894 0.439453 1.09382 0.439453H8.4374H11.5624Z" fill="white"></path>
+                        </svg></a>
+                </div>
+                <div class="patient-info-body-g">
+                    <div class="pationt-status-sec-g">
+                        <div class="row">
+                            <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                        <label class="lab-g">Last Name</label>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                        <h3 class="lab-det-g">Ava</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                        <label class="lab-g">First name</label>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                        <h3 class="lab-det-g">Esabella</h3>
+                                    </div>
+                                </div>
+                            </div><div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                        <label class="lab-g">Date of Birth &amp; Age</label>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                        <h3 class="lab-det-g">02/14/1990 &amp; 30</h3>
+                                    </div>
+                                </div>
+                            </div><div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                        <label class="lab-g">Gender</label>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                        <h3 class="lab-det-g">Female</h3>
+                                    </div>
+                                </div>
+                            </div><div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                        <label class="lab-g">Provincial Health Care#</label>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                        <h3 class="lab-det-g">#1234567890</h3>
+                                    </div>
+                                </div>
+                            </div><div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                        <label class="lab-g">Status</label>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                        <h3 class="comp-txt-g">Completed</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bb-btn-g">
+                            <button class="imz-btn">Immunization History from AHS</button>
+                        </div>
+                    </div>
+
+                    <div class="personal-info-sec health-hist-g">
+                        <h2 class="detail-head-g">Health History</h2>
+                        <div class="personal-inner-g px-0">
+                            <div class="row">
+                                <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Allergies 1
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 0C3.57803 0 0 3.57834 0 8C0 12.422 3.57834 16 8 16C12.422 16 16 12.4217 16 8C16 3.57803 12.4216 0 8 0ZM8 14.75C4.26897 14.75 1.25 11.7308 1.25 8C1.25 4.26897 4.26922 1.25 8 1.25C11.731 1.25 14.75 4.26922 14.75 8C14.75 11.731 11.7308 14.75 8 14.75Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 6.69727C7.65481 6.69727 7.375 6.97708 7.375 7.32227V11.3471C7.375 11.6922 7.65481 11.9721 8 11.9721C8.34519 11.9721 8.625 11.6922 8.625 11.347V7.32227C8.625 6.97708 8.34519 6.69727 8 6.69727Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 5.93164C8.46599 5.93164 8.84375 5.55388 8.84375 5.08789C8.84375 4.6219 8.46599 4.24414 8 4.24414C7.53401 4.24414 7.15625 4.6219 7.15625 5.08789C7.15625 5.55388 7.53401 5.93164 8 5.93164Z" fill="#7D7D7D"></path>
+                                                    </svg></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Rashes</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Allergies 2
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 0C3.57803 0 0 3.57834 0 8C0 12.422 3.57834 16 8 16C12.422 16 16 12.4217 16 8C16 3.57803 12.4216 0 8 0ZM8 14.75C4.26897 14.75 1.25 11.7308 1.25 8C1.25 4.26897 4.26922 1.25 8 1.25C11.731 1.25 14.75 4.26922 14.75 8C14.75 11.731 11.7308 14.75 8 14.75Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 6.69727C7.65481 6.69727 7.375 6.97708 7.375 7.32227V11.3471C7.375 11.6922 7.65481 11.9721 8 11.9721C8.34519 11.9721 8.625 11.6922 8.625 11.347V7.32227C8.625 6.97708 8.34519 6.69727 8 6.69727Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 5.93164C8.46599 5.93164 8.84375 5.55388 8.84375 5.08789C8.84375 4.6219 8.46599 4.24414 8 4.24414C7.53401 4.24414 7.15625 4.6219 7.15625 5.08789C7.15625 5.55388 7.53401 5.93164 8 5.93164Z" fill="#7D7D7D"></path>
+                                                    </svg></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Allergie 2</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Allergies 3
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 0C3.57803 0 0 3.57834 0 8C0 12.422 3.57834 16 8 16C12.422 16 16 12.4217 16 8C16 3.57803 12.4216 0 8 0ZM8 14.75C4.26897 14.75 1.25 11.7308 1.25 8C1.25 4.26897 4.26922 1.25 8 1.25C11.731 1.25 14.75 4.26922 14.75 8C14.75 11.731 11.7308 14.75 8 14.75Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 6.69727C7.65481 6.69727 7.375 6.97708 7.375 7.32227V11.3471C7.375 11.6922 7.65481 11.9721 8 11.9721C8.34519 11.9721 8.625 11.6922 8.625 11.347V7.32227C8.625 6.97708 8.34519 6.69727 8 6.69727Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 5.93164C8.46599 5.93164 8.84375 5.55388 8.84375 5.08789C8.84375 4.6219 8.46599 4.24414 8 4.24414C7.53401 4.24414 7.15625 4.6219 7.15625 5.08789C7.15625 5.55388 7.53401 5.93164 8 5.93164Z" fill="#7D7D7D"></path>
+                                                    </svg></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Allergie 3</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Regular Medications
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 0C3.57803 0 0 3.57834 0 8C0 12.422 3.57834 16 8 16C12.422 16 16 12.4217 16 8C16 3.57803 12.4216 0 8 0ZM8 14.75C4.26897 14.75 1.25 11.7308 1.25 8C1.25 4.26897 4.26922 1.25 8 1.25C11.731 1.25 14.75 4.26922 14.75 8C14.75 11.731 11.7308 14.75 8 14.75Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 6.69727C7.65481 6.69727 7.375 6.97708 7.375 7.32227V11.3471C7.375 11.6922 7.65481 11.9721 8 11.9721C8.34519 11.9721 8.625 11.6922 8.625 11.347V7.32227C8.625 6.97708 8.34519 6.69727 8 6.69727Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 5.93164C8.46599 5.93164 8.84375 5.55388 8.84375 5.08789C8.84375 4.6219 8.46599 4.24414 8 4.24414C7.53401 4.24414 7.15625 4.6219 7.15625 5.08789C7.15625 5.55388 7.53401 5.93164 8 5.93164Z" fill="#7D7D7D"></path>
+                                                    </svg></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Regular Medications 1</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Regular Medications
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 0C3.57803 0 0 3.57834 0 8C0 12.422 3.57834 16 8 16C12.422 16 16 12.4217 16 8C16 3.57803 12.4216 0 8 0ZM8 14.75C4.26897 14.75 1.25 11.7308 1.25 8C1.25 4.26897 4.26922 1.25 8 1.25C11.731 1.25 14.75 4.26922 14.75 8C14.75 11.731 11.7308 14.75 8 14.75Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 6.69727C7.65481 6.69727 7.375 6.97708 7.375 7.32227V11.3471C7.375 11.6922 7.65481 11.9721 8 11.9721C8.34519 11.9721 8.625 11.6922 8.625 11.347V7.32227C8.625 6.97708 8.34519 6.69727 8 6.69727Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 5.93164C8.46599 5.93164 8.84375 5.55388 8.84375 5.08789C8.84375 4.6219 8.46599 4.24414 8 4.24414C7.53401 4.24414 7.15625 4.6219 7.15625 5.08789C7.15625 5.55388 7.53401 5.93164 8 5.93164Z" fill="#7D7D7D"></path>
+                                                    </svg></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Regular Medications 2</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Regular Medications
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 0C3.57803 0 0 3.57834 0 8C0 12.422 3.57834 16 8 16C12.422 16 16 12.4217 16 8C16 3.57803 12.4216 0 8 0ZM8 14.75C4.26897 14.75 1.25 11.7308 1.25 8C1.25 4.26897 4.26922 1.25 8 1.25C11.731 1.25 14.75 4.26922 14.75 8C14.75 11.731 11.7308 14.75 8 14.75Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 6.69727C7.65481 6.69727 7.375 6.97708 7.375 7.32227V11.3471C7.375 11.6922 7.65481 11.9721 8 11.9721C8.34519 11.9721 8.625 11.6922 8.625 11.347V7.32227C8.625 6.97708 8.34519 6.69727 8 6.69727Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 5.93164C8.46599 5.93164 8.84375 5.55388 8.84375 5.08789C8.84375 4.6219 8.46599 4.24414 8 4.24414C7.53401 4.24414 7.15625 4.6219 7.15625 5.08789C7.15625 5.55388 7.53401 5.93164 8 5.93164Z" fill="#7D7D7D"></path>
+                                                    </svg></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Regular Medications 3</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Chronic Illness
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 0C3.57803 0 0 3.57834 0 8C0 12.422 3.57834 16 8 16C12.422 16 16 12.4217 16 8C16 3.57803 12.4216 0 8 0ZM8 14.75C4.26897 14.75 1.25 11.7308 1.25 8C1.25 4.26897 4.26922 1.25 8 1.25C11.731 1.25 14.75 4.26922 14.75 8C14.75 11.731 11.7308 14.75 8 14.75Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 6.69727C7.65481 6.69727 7.375 6.97708 7.375 7.32227V11.3471C7.375 11.6922 7.65481 11.9721 8 11.9721C8.34519 11.9721 8.625 11.6922 8.625 11.347V7.32227C8.625 6.97708 8.34519 6.69727 8 6.69727Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 5.93164C8.46599 5.93164 8.84375 5.55388 8.84375 5.08789C8.84375 4.6219 8.46599 4.24414 8 4.24414C7.53401 4.24414 7.15625 4.6219 7.15625 5.08789C7.15625 5.55388 7.53401 5.93164 8 5.93164Z" fill="#7D7D7D"></path>
+                                                    </svg></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Chronic Illness 1</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Chronic Illness
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 0C3.57803 0 0 3.57834 0 8C0 12.422 3.57834 16 8 16C12.422 16 16 12.4217 16 8C16 3.57803 12.4216 0 8 0ZM8 14.75C4.26897 14.75 1.25 11.7308 1.25 8C1.25 4.26897 4.26922 1.25 8 1.25C11.731 1.25 14.75 4.26922 14.75 8C14.75 11.731 11.7308 14.75 8 14.75Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 6.69727C7.65481 6.69727 7.375 6.97708 7.375 7.32227V11.3471C7.375 11.6922 7.65481 11.9721 8 11.9721C8.34519 11.9721 8.625 11.6922 8.625 11.347V7.32227C8.625 6.97708 8.34519 6.69727 8 6.69727Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 5.93164C8.46599 5.93164 8.84375 5.55388 8.84375 5.08789C8.84375 4.6219 8.46599 4.24414 8 4.24414C7.53401 4.24414 7.15625 4.6219 7.15625 5.08789C7.15625 5.55388 7.53401 5.93164 8 5.93164Z" fill="#7D7D7D"></path>
+                                                    </svg></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Chronic Illness 2</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Chronic Illness
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 0C3.57803 0 0 3.57834 0 8C0 12.422 3.57834 16 8 16C12.422 16 16 12.4217 16 8C16 3.57803 12.4216 0 8 0ZM8 14.75C4.26897 14.75 1.25 11.7308 1.25 8C1.25 4.26897 4.26922 1.25 8 1.25C11.731 1.25 14.75 4.26922 14.75 8C14.75 11.731 11.7308 14.75 8 14.75Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 6.69727C7.65481 6.69727 7.375 6.97708 7.375 7.32227V11.3471C7.375 11.6922 7.65481 11.9721 8 11.9721C8.34519 11.9721 8.625 11.6922 8.625 11.347V7.32227C8.625 6.97708 8.34519 6.69727 8 6.69727Z" fill="#7D7D7D"></path>
+                                                    <path d="M8 5.93164C8.46599 5.93164 8.84375 5.55388 8.84375 5.08789C8.84375 4.6219 8.46599 4.24414 8 4.24414C7.53401 4.24414 7.15625 4.6219 7.15625 5.08789C7.15625 5.55388 7.53401 5.93164 8 5.93164Z" fill="#7D7D7D"></path>
+                                                    </svg></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Chronic Illness 2</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Pregnant</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Yes / 11 Weeks</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Breastfeeding</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">No</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Past Adverse Reaction to Vaccine</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Lorem ipsum is a dummy text content in a paragraph...</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Comments</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Lorem ipsum is a dummy text
+                                                content in a paragraph..,</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                           
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="Immu-sec-g">
+                        <h2 class="detail-head-g">Immunization Record</h2>
+                        <div class="pdf-sect-appo">   
+                                                                                 
+                            <div class="pdf-left-g">
+                                <label class="lab-g">Previous Vaccine History</label>
+                                <h2 class="pdf-txt-g">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                        <path d="M7.5 0C6.46875 0 5.625 0.84375 5.625 1.875V28.125C5.625 29.1562 6.46875 30 7.5 30H26.25C27.2812 30 28.125 29.1562 28.125 28.125V7.5L20.625 0H7.5Z" fill="#E2E5E7"></path>
+                                        <path d="M22.5 7.5H28.125L20.625 0V5.625C20.625 6.65625 21.4688 7.5 22.5 7.5Z" fill="#B0B7BD"></path>
+                                        <path d="M28.125 13.125L22.5 7.5H28.125V13.125Z" fill="#CAD1D8"></path>
+                                        <path d="M24.375 24.375C24.375 24.8906 23.9531 25.3125 23.4375 25.3125H2.8125C2.29688 25.3125 1.875 24.8906 1.875 24.375V15C1.875 14.4844 2.29688 14.0625 2.8125 14.0625H23.4375C23.9531 14.0625 24.375 14.4844 24.375 15V24.375Z" fill="#F15642"></path>
+                                        <path d="M5.96155 17.7636C5.96155 17.5161 6.15655 17.2461 6.47061 17.2461H8.20217C9.17717 17.2461 10.0547 17.8986 10.0547 19.1492C10.0547 20.3342 9.17717 20.9942 8.20217 20.9942H6.95061V21.9842C6.95061 22.3142 6.74061 22.5008 6.47061 22.5008C6.22311 22.5008 5.96155 22.3142 5.96155 21.9842V17.7636ZM6.95061 18.1902V20.0577H8.20217C8.70467 20.0577 9.10217 19.6142 9.10217 19.1492C9.10217 18.6252 8.70467 18.1902 8.20217 18.1902H6.95061Z" fill="white"></path>
+                                        <path d="M11.5228 22.5016C11.2753 22.5016 11.0053 22.3666 11.0053 22.0376V17.7795C11.0053 17.5104 11.2753 17.3145 11.5228 17.3145H13.2393C16.665 17.3145 16.59 22.5016 13.3068 22.5016H11.5228ZM11.9953 18.2295V21.5876H13.2393C15.2634 21.5876 15.3534 18.2295 13.2393 18.2295H11.9953Z" fill="white"></path>
+                                        <path d="M17.805 18.2884V19.48H19.7166C19.9866 19.48 20.2566 19.75 20.2566 20.0116C20.2566 20.2591 19.9866 20.4616 19.7166 20.4616H17.805V22.0356C17.805 22.2981 17.6184 22.4997 17.3559 22.4997C17.0259 22.4997 16.8244 22.2981 16.8244 22.0356V17.7775C16.8244 17.5084 17.0269 17.3125 17.3559 17.3125H19.9875C20.3175 17.3125 20.5125 17.5084 20.5125 17.7775C20.5125 18.0175 20.3175 18.2875 19.9875 18.2875H17.805V18.2884Z" fill="white"></path>
+                                        <path d="M23.4375 25.3125H5.625V26.25H23.4375C23.9531 26.25 24.375 25.8281 24.375 25.3125V24.375C24.375 24.8906 23.9531 25.3125 23.4375 25.3125Z" fill="#CAD1D8"></path>
+                                        </svg></span>
+                                         PDF file name 001.pdf <a href="#" class="view-more-link-g">View Detail</a>
+                                </h2>
+                            </div>
+                            <div class="pdf-rgt-g">
+                                <button class="down-btn-g">Download</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recomed-vaccined-info">
+                        <h2 class="detail-head-g">Recommendation - Vaccines List</h2>
+                        <div class="nurse_popup_main">
+                            <div class="table-responsive">
+                                <table class="table nurse_first_table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Vaccines<span><img src="images/arrow-up-down.svg"></span></th>
+                                            <th>Date<span><img src="images/arrow-up-down.svg"></span></th>
+                                            <th>Lot NumberReceived<span><img src="images/arrow-up-down.svg"></span></th>
+                                            <th>Site<span><img src="images/arrow-up-down.svg"></span></th>
+                                            <th>Description</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                           <td>01</td>
+                                           <td>Hep A – (Adult/Ped) #1</td>
+                                           <td>02/20/2020</td>
+                                           <td class="text-center">15</td>
+                                           <td>Right Arm</td>
+                                           <td>Lorem ipsum is a dummy text of content</td>
+                                           <td>
+                                               <span class="red-txt-g">Declined <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 0C3.57803 0 0 3.57834 0 8C0 12.422 3.57834 16 8 16C12.422 16 16 12.4217 16 8C16 3.57803 12.4216 0 8 0ZM8 14.75C4.26897 14.75 1.25 11.7308 1.25 8C1.25 4.26897 4.26922 1.25 8 1.25C11.731 1.25 14.75 4.26922 14.75 8C14.75 11.731 11.7308 14.75 8 14.75Z" fill="#E74C3C"></path>
+                                                <path d="M8 6.69727C7.65481 6.69727 7.375 6.97708 7.375 7.32227V11.3471C7.375 11.6922 7.65481 11.9721 8 11.9721C8.34519 11.9721 8.625 11.6922 8.625 11.347V7.32227C8.625 6.97708 8.34519 6.69727 8 6.69727Z" fill="#E74C3C"></path>
+                                                <path d="M8 5.93164C8.46599 5.93164 8.84375 5.55388 8.84375 5.08789C8.84375 4.6219 8.46599 4.24414 8 4.24414C7.53401 4.24414 7.15625 4.6219 7.15625 5.08789C7.15625 5.55388 7.53401 5.93164 8 5.93164Z" fill="#E74C3C"></path>
+                                                </svg></span>
+                                           </td>
+                                       </tr>
+
+                                       <tr>
+                                        <td>02</td>
+                                        <td>Hep A – (Adult/Ped) #2</td>
+                                        <td>02/20/2020</td>
+                                        <td class="text-center">15</td>
+                                        <td>Left Arm</td>
+                                        <td>Lorem ipsum is a dummy text of content</td>
+                                        <td>
+                                            <span class="gre-txt-g">Accepted </span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>03</td>
+                                        <td>Hep A – (Adult/Ped) #3</td>
+                                        <td>02/20/2020</td>
+                                        <td class="text-center">15</td>
+                                        <td>Right Arm</td>
+                                        <td>Lorem ipsum is a dummy text of content</td>
+                                        <td>
+                                            <span class="orr-txt-g">Thinking </span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recomed-vaccined-info">
+                        <h2 class="detail-head-g">Enter the TB testing result<span class="sub-t-g"> (after 48-72 hours) </span> </h2>
+                        <h2 class="sub-dk-g">Test Result</h2>
+                        <div class="nurse_popup_main">
+                            <div class="table-responsive">
+                                <table class="table nurse_first_table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Reading (Date &amp; Time)</th>
+                                            <th>Measurement</th>
+                                            <th>Result</th>
+                                            <th>Initials</th>
+                                            <th>TB Requisition Form</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                           <td>01</td>
+                                           <td>20/02/2020 &amp; 06:02 am</td>
+                                           <td>8.39</td>
+                                           <td>Negative</td>
+                                           <td>Lorem ipsum is a dummy </td>
+                                           
+                                           <td>
+                                            <h2 class="pdf-txt-g pdf-tn-dwn">
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                                    <path d="M7.5 0C6.46875 0 5.625 0.84375 5.625 1.875V28.125C5.625 29.1562 6.46875 30 7.5 30H26.25C27.2812 30 28.125 29.1562 28.125 28.125V7.5L20.625 0H7.5Z" fill="#E2E5E7"></path>
+                                                    <path d="M22.5 7.5H28.125L20.625 0V5.625C20.625 6.65625 21.4688 7.5 22.5 7.5Z" fill="#B0B7BD"></path>
+                                                    <path d="M28.125 13.125L22.5 7.5H28.125V13.125Z" fill="#CAD1D8"></path>
+                                                    <path d="M24.375 24.375C24.375 24.8906 23.9531 25.3125 23.4375 25.3125H2.8125C2.29688 25.3125 1.875 24.8906 1.875 24.375V15C1.875 14.4844 2.29688 14.0625 2.8125 14.0625H23.4375C23.9531 14.0625 24.375 14.4844 24.375 15V24.375Z" fill="#F15642"></path>
+                                                    <path d="M5.96155 17.7636C5.96155 17.5161 6.15655 17.2461 6.47061 17.2461H8.20217C9.17717 17.2461 10.0547 17.8986 10.0547 19.1492C10.0547 20.3342 9.17717 20.9942 8.20217 20.9942H6.95061V21.9842C6.95061 22.3142 6.74061 22.5008 6.47061 22.5008C6.22311 22.5008 5.96155 22.3142 5.96155 21.9842V17.7636ZM6.95061 18.1902V20.0577H8.20217C8.70467 20.0577 9.10217 19.6142 9.10217 19.1492C9.10217 18.6252 8.70467 18.1902 8.20217 18.1902H6.95061Z" fill="white"></path>
+                                                    <path d="M11.5228 22.5016C11.2753 22.5016 11.0053 22.3666 11.0053 22.0376V17.7795C11.0053 17.5104 11.2753 17.3145 11.5228 17.3145H13.2393C16.665 17.3145 16.59 22.5016 13.3068 22.5016H11.5228ZM11.9953 18.2295V21.5876H13.2393C15.2634 21.5876 15.3534 18.2295 13.2393 18.2295H11.9953Z" fill="white"></path>
+                                                    <path d="M17.805 18.2884V19.48H19.7166C19.9866 19.48 20.2566 19.75 20.2566 20.0116C20.2566 20.2591 19.9866 20.4616 19.7166 20.4616H17.805V22.0356C17.805 22.2981 17.6184 22.4997 17.3559 22.4997C17.0259 22.4997 16.8244 22.2981 16.8244 22.0356V17.7775C16.8244 17.5084 17.0269 17.3125 17.3559 17.3125H19.9875C20.3175 17.3125 20.5125 17.5084 20.5125 17.7775C20.5125 18.0175 20.3175 18.2875 19.9875 18.2875H17.805V18.2884Z" fill="white"></path>
+                                                    <path d="M23.4375 25.3125H5.625V26.25H23.4375C23.9531 26.25 24.375 25.8281 24.375 25.3125V24.375C24.375 24.8906 23.9531 25.3125 23.4375 25.3125Z" fill="#CAD1D8"></path>
+                                                    </svg></span>
+                                                     PDF file name 001.pdf 
+                                                     <button class="d-ico"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                                                        <rect x="38" y="38" width="38" height="38" rx="10" transform="rotate(-180 38 38)" fill="#25D4E3"></rect>
+                                                        <path d="M22.0595 10.9991L16.4125 10.9991V16.6462H12.6477L19.236 23.2344L25.8242 16.6462H22.0595V10.9991Z" fill="white"></path>
+                                                        <path d="M12.8235 26.8828H26V25.0004H12.8235V26.8828Z" fill="white"></path>
+                                                        </svg></button>
+                                            </h2>
+                                           </td>
+                                       </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="result-sec">
+                            <div class="result-inner-g">
+                                <label class="lab-g">Result</label>
+                                <h2 class="pdf-txt-g pdf-tn-dwn">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                        <path d="M7.5 0C6.46875 0 5.625 0.84375 5.625 1.875V28.125C5.625 29.1562 6.46875 30 7.5 30H26.25C27.2812 30 28.125 29.1562 28.125 28.125V7.5L20.625 0H7.5Z" fill="#E2E5E7"></path>
+                                        <path d="M22.5 7.5H28.125L20.625 0V5.625C20.625 6.65625 21.4688 7.5 22.5 7.5Z" fill="#B0B7BD"></path>
+                                        <path d="M28.125 13.125L22.5 7.5H28.125V13.125Z" fill="#CAD1D8"></path>
+                                        <path d="M24.375 24.375C24.375 24.8906 23.9531 25.3125 23.4375 25.3125H2.8125C2.29688 25.3125 1.875 24.8906 1.875 24.375V15C1.875 14.4844 2.29688 14.0625 2.8125 14.0625H23.4375C23.9531 14.0625 24.375 14.4844 24.375 15V24.375Z" fill="#F15642"></path>
+                                        <path d="M5.96155 17.7636C5.96155 17.5161 6.15655 17.2461 6.47061 17.2461H8.20217C9.17717 17.2461 10.0547 17.8986 10.0547 19.1492C10.0547 20.3342 9.17717 20.9942 8.20217 20.9942H6.95061V21.9842C6.95061 22.3142 6.74061 22.5008 6.47061 22.5008C6.22311 22.5008 5.96155 22.3142 5.96155 21.9842V17.7636ZM6.95061 18.1902V20.0577H8.20217C8.70467 20.0577 9.10217 19.6142 9.10217 19.1492C9.10217 18.6252 8.70467 18.1902 8.20217 18.1902H6.95061Z" fill="white"></path>
+                                        <path d="M11.5228 22.5016C11.2753 22.5016 11.0053 22.3666 11.0053 22.0376V17.7795C11.0053 17.5104 11.2753 17.3145 11.5228 17.3145H13.2393C16.665 17.3145 16.59 22.5016 13.3068 22.5016H11.5228ZM11.9953 18.2295V21.5876H13.2393C15.2634 21.5876 15.3534 18.2295 13.2393 18.2295H11.9953Z" fill="white"></path>
+                                        <path d="M17.805 18.2884V19.48H19.7166C19.9866 19.48 20.2566 19.75 20.2566 20.0116C20.2566 20.2591 19.9866 20.4616 19.7166 20.4616H17.805V22.0356C17.805 22.2981 17.6184 22.4997 17.3559 22.4997C17.0259 22.4997 16.8244 22.2981 16.8244 22.0356V17.7775C16.8244 17.5084 17.0269 17.3125 17.3559 17.3125H19.9875C20.3175 17.3125 20.5125 17.5084 20.5125 17.7775C20.5125 18.0175 20.3175 18.2875 19.9875 18.2875H17.805V18.2884Z" fill="white"></path>
+                                        <path d="M23.4375 25.3125H5.625V26.25H23.4375C23.9531 26.25 24.375 25.8281 24.375 25.3125V24.375C24.375 24.8906 23.9531 25.3125 23.4375 25.3125Z" fill="#CAD1D8"></path>
+                                        </svg></span>
+                                         PDF file name 001.pdf 
+                                         <button class="d-ico"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                                            <rect x="38" y="38" width="38" height="38" rx="10" transform="rotate(-180 38 38)" fill="#25D4E3"></rect>
+                                            <path d="M22.0595 10.9991L16.4125 10.9991V16.6462H12.6477L19.236 23.2344L25.8242 16.6462H22.0595V10.9991Z" fill="white"></path>
+                                            <path d="M12.8235 26.8828H26V25.0004H12.8235V26.8828Z" fill="white"></path>
+                                            </svg></button>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-mult-sec cutom-edit-g py-2">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 BL_padding">
+                            <div class="altas_forms BL_altas_forms health_width">
+                                <label>Risk for TB Referral</label>
+                                <span>Yes </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 BL_padding">
+                            <div class="altas_forms BL_altas_forms health_width">
+                                <label>Referred to TB Services</label>
+                                <span>Yes </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 BL_padding">
+                            <div class="altas_forms BL_altas_forms health_width clik-wid-g   ">
+                                <label>Copy Link | <a href="#">https://www.albertahealthservices.ca/frm-07980.pdf</a></label>
+                                <span><img class="copy-clip" src="images/copy-clipcart.png"> </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="personal-info-sec">
+                        <h2 class="detail-head-g">Prescription <span class="sub-t-g">(Only for Travel)</span> </h2>
+                        <div class="personal-inner-g">
+                            <div class="row">
+                                <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Prescription Given</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Yes</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Weight</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">01 <span>KG.</span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-12 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <h3 class="lab-det-g">Prescriptions</h3>
+                                    <table class="prescrip-table">
+                                        <thead>
+                                            <tr><th>Prescriptions</th>
+                                            <th>Dosage</th>
+                                            <th>No. of Tabs</th>
+                                            <th>No. of Days</th>
+                                        </tr></thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Chloroquine</td>
+                                                <td>Adult</td>
+                                                <td>500mg</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Doxycycline</td>
+                                                <td>Pediatric</td>
+                                                <td>8mg</td>
+                                                <td>10</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                        
+                                    </div>
+                                    <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <label class="lab-g">None applicable</label>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <h3 class="lab-det-g">Yes</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <label class="lab-g">Not in Malaria Risk Area</label>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <h3 class="lab-det-g">No</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class=" col-lg-4 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <label class="lab-g">Referred to Dr.</label>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <h3 class="lab-det-g">No</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            
+                                    <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <label class="lab-g">Letter given</label>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <h3 class="lab-det-g">Yes / Chlor</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <label class="lab-g">Supplied by Dr</label>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <h3 class="lab-det-g">Yes / Malaria</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <label class="lab-g">Discuss next visit</label>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <h3 class="lab-det-g">Yes / Diamox</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <label class="lab-g">Declined</label>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <h3 class="lab-det-g">Yes / Travelers Diarrhear</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <label class="lab-g">Email</label>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                                <h3 class="lab-det-g">Yes / Declined</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                               
+                                
+
+
+                            </div>
+                            <div class="bb-btn-g">
+                                <button class="imz-btn">Print the Prescription</button>
+                            </div>
+                        </div>
+
+                    <div class="notes-sec-g">
+                        <div class="atlas_head_title">
+                            <h2>Nurse Notes
+                            </h2>
+                        </div>
+                        <div class="nurse_detail">
+                            <div class="bgm_grey_panel panellist_aware bgpa">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has be the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                    scrambled it to make a type specimen book.</p>
+                            </div>
+
+                            <div class="date">
+                                <p>25/03/2020</p>
+                                <span>Date</span>
+                            </div>
+                        </div>
+                        </div>
+
+
+
+
+                        
+                    </div>
+                    
+                   
+
+                </div>
+
+                <div class="patient-info-det-g">
+                    <div class="patient-info-hd-g">
+                        <h2>Patient 2</h2>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0)">
+                            <path d="M18.905 8.43952H18.9062H11.5624V1.1096C11.5624 0.506344 11.074 0.00195312 10.4707 0.00195312H9.53106C8.92797 0.00195312 8.4374 0.506344 8.4374 1.1096V8.43952H1.09382C0.490894 8.43952 0 8.92733 0 9.53074V10.4758C0 11.0787 0.490732 11.5644 1.09382 11.5644H8.43756V18.9208C8.43756 19.5238 8.92797 20.0018 9.53122 20.0018H10.4709C11.0741 20.0018 11.5626 19.5236 11.5626 18.9208V11.5644H18.905C19.5083 11.5644 20 11.0785 20 10.4758V9.53074C20 8.92733 19.5083 8.43952 18.905 8.43952Z" fill="white"></path>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="20" height="20" fill="white"></rect>
+                            </clipPath>
+                            </defs>
+                            </svg></a>
+                    </div>
+                    <div class="patient-info-body-g">
+                        <div class="pationt-status-sec-g">
+                            <div class="row">
+                                <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Last Name</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Ava</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">First name</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Esabella</h3>
+                                        </div>
+                                    </div>
+                                </div><div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Date of Birth &amp; Age</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">02/14/1990 &amp; 30</h3>
+                                        </div>
+                                    </div>
+                                </div><div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Gender</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">Female</h3>
+                                        </div>
+                                    </div>
+                                </div><div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Provincial Health Care#</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="lab-det-g">#1234567890</h3>
+                                        </div>
+                                    </div>
+                                </div><div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <label class="lab-g">Status</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                            <h3 class="comp-txt-g inprog-txt-g">In Progress</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bb-btn-g">
+                                <button class="imz-btn">Immunization History from AHS</button>
+                            </div>
+                        </div>
+
+                     
+                        </div>
+                        
+                       
+
+                    </div>
+
+                <div class="contact-info-g">
+                    <h2>Contact Information</h2>
+                    <div class="row">
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <label class="lab-g">Street Address</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <h3 class="lab-det-g">Street Address</h3>
+                                </div>
+                            </div>
+                        </div>
+                  
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <label class="lab-g">City</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <h3 class="lab-det-g">Chennai</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <label class="lab-g">Province</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <h3 class="lab-det-g">Province Name</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <label class="lab-g">Postal Code</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <h3 class="lab-det-g">600 006</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <label class="lab-g">Phone Number</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <h3 class="lab-det-g">+91 9654 78 9512</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <label class="lab-g">Email Address</label>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <h3 class="lab-det-g">Sampleid@email.com</h3>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <label class="lab-g">Where did you here about Atlas?</label>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <h3 class="lab-det-g">Lorem ipsum is a dummy text content in a paragraph...</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col-lg-6 col-md-12 col-xs-12 col-sm-12 pers-bx-g">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <label class="lab-g">Have you been vaccinated by Atlas before?</label>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 pers-inner-cm">
+                                    <h3 class="lab-det-g">No</h3>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="atlas_head_title">
+                    <h2>Nurse Notes
+                    </h2>
+                </div>
+
+                <div class="nurse_detail">
+                    <div class="bgm_grey_panel panellist_aware bgpa">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has be the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                            scrambled it to make a type specimen book.</p>
+                    </div>
+
+                    <div class="date">
+                        <p>25/03/2020</p>
+                        <span>Date</span>
+                    </div>
+                </div>
+
+                <div class="change_formpassword bb-1">
+                    <div class="col-md-6 col-xs-12 col-sm-6 col-lg-6">
+                        <div class="altas_forms views_forms">
+                            <label>Appointment Status</label>
+                            <div class="records_pdf_download">
+                                <button class="btn_secondary btn_mdn BL_downbnt inprog-txt-g">In Progress</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bgm_grey_panel panellist_aware ">
+                    <p>I have read the attached price list, and I am aware of the prices for vaccines, prescriptions and the one time Clinic Visit Fee per person per trip of <strong>$35.00 ($20.00 </strong> for children 10 years of age and younger) (initial) or <strong> $75.00 </strong> Emergency fee (outside business 
+                    hours) – <strong>Please remember to submit your receipt (s) to your private insurance provider as you may be eligible for reimbursement </strong>. Provincial Health Care Insurance <strong> do not cover </strong>Travel Immunizations..</p>
+                </div>
+
+                <div class="bgm_grey_panel panellist_aware advi_consil">
+                    <h3>I consent to have vaccines and/or advice given at Atlas Immunization Services, INC</h3>
+                    <div class="signature_lays_wrapper sign-wrap ali-tp-g">
+                        <div class="signature_lay consul">
+                            <p class="sign-img"><img src="images/thc-sign.png"></p>
+                            <label>Travel Health Consultant Signature (Nurse)</label>
+                        </div>
+                        <div class="signature_lay client">
+                            <p class="sign-img"><img src="images/client-sign.png"></p>
+                            <label>Client /Parent/Guardian Signature</label>
+                            <label class="sub-auth-g">(Parental/Guardian signature required
+                                for clients under 16 years old)</label>
+                        </div>
+                    </div>
+                    <label class="lab-sg">*Travel recommendations are as per Travax Encompass, Shoreland, INC (which includes CATMAT, CDC Atlanta, WHO and Health Canada) current guidelines at the
+                        time of appointment. Requested or Declined vaccines may have been added or omitted respectively, as per traveller, parent, guardian or third party client direction.</label>
+
+                    <p class="note-pr-g">* Please be advised that due to the Privacy Act we will not release any personal/medical information to third parties.</p>
+                </div>
+
+                <div class="end_submitform end-bck">
+                    <button class="btn_darkgrey btn_md back_but_blue">Back</button>
+                </div>
+
+
+            </div>
+           
+          
+        </div>
+    </div>
+                     
+                  
+                     <!-- END Tab immunizations pills -->
+                  </div>
+               </div>
+               <!-- Notifications -->
+               <div class="notification_wrapper">
+                  <div class="notification_clear">
+                     <span class="notifi_osff">
+                     <img src="./images/close_noti.png" alt="icon" />
+                     </span>
+                     <div class="notifi_head">
+                        <h2>Notifications</h2>
+                        <span>Clear All</span>
+                     </div>
+                     <div class="listout_notifi">
+                        <ul>
+                           <li class="active">
+                              <div class="notifi_details">
+                                 <div class="noitifi_img"><img src="./images/noti_bell.png" alt="icon"></div>
+                                 <div class="notifi_content">
+                                    <h4>Steve Smith</h4>
+                                    <span>Today at 04:48 PM</span>
+                                    <p>Atlas updated appointments status</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="notifi_details">
+                                 <div class="noitifi_img"><img src="./images/noti_bell.png" alt="icon"></div>
+                                 <div class="notifi_content">
+                                    <h4>Johnny Depp</h4>
+                                    <span>Today at 04:48 PM</span>
+                                    <p>Atlas updated appointments status</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="notifi_details">
+                                 <div class="noitifi_img"><img src="./images/noti_bell.png" alt="icon"></div>
+                                 <div class="notifi_content">
+                                    <h4>Jenifer</h4>
+                                    <span>Today at 04:48 PM</span>
+                                    <p>Your Appointment has been cancelled</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="active">
+                              <div class="notifi_details">
+                                 <div class="noitifi_img"><img src="./images/noti_bell.png" alt="icon"></div>
+                                 <div class="notifi_content">
+                                    <h4>Robert De Niro</h4>
+                                    <span>Today at 04:48 PM</span>
+                                    <p>Atlas updated appointments status</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="active">
+                              <div class="notifi_details">
+                                 <div class="noitifi_img"><img src="./images/noti_bell.png" alt="icon"></div>
+                                 <div class="notifi_content">
+                                    <h4>Steve Smith</h4>
+                                    <span>Today at 04:48 PM</span>
+                                    <p>Atlas updated appointments status</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="notifi_details">
+                                 <div class="noitifi_img"><img src="./images/noti_bell.png" alt="icon"></div>
+                                 <div class="notifi_content">
+                                    <h4>Johnny Depp</h4>
+                                    <span>Today at 04:48 PM</span>
+                                    <p>Atlas updated appointments status</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="notifi_details">
+                                 <div class="noitifi_img"><img src="./images/noti_bell.png" alt="icon"></div>
+                                 <div class="notifi_content">
+                                    <h4>Johnny Depp</h4>
+                                    <span>Today at 04:48 PM</span>
+                                    <p>Atlas updated appointments status</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="active">
+                              <div class="notifi_details">
+                                 <div class="noitifi_img"><img src="./images/noti_bell.png" alt="icon"></div>
+                                 <div class="notifi_content">
+                                    <h4>Steve Smith</h4>
+                                    <span>Today at 04:48 PM</span>
+                                    <p>Atlas updated appointments status</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="notifi_details">
+                                 <div class="noitifi_img"><img src="./images/noti_bell.png" alt="icon"></div>
+                                 <div class="notifi_content">
+                                    <h4>Johnny Depp</h4>
+                                    <span>Today at 04:48 PM</span>
+                                    <p>Atlas updated appointments status</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="active">
+                              <div class="notifi_details">
+                                 <div class="noitifi_img"><img src="./images/noti_bell.png" alt="icon"></div>
+                                 <div class="notifi_content">
+                                    <h4>Jenifer</h4>
+                                    <span>Today at 04:48 PM</span>
+                                    <p>Your Appointment has been cancelled</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="notifi_details">
+                                 <div class="noitifi_img"><img src="./images/noti_bell.png" alt="icon"></div>
+                                 <div class="notifi_content">
+                                    <h4>Robert De Niro</h4>
+                                    <span>Today at 04:48 PM</span>
+                                    <p>Atlas updated appointments status</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="notifi_details">
+                                 <div class="noitifi_img"><img src="./images/noti_bell.png" alt="icon"></div>
+                                 <div class="notifi_content">
+                                    <h4>Steve Smith</h4>
+                                    <span>Today at 04:48 PM</span>
+                                    <p>Atlas updated appointments status</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="notifi_details">
+                                 <div class="noitifi_img"><img src="./images/noti_bell.png" alt="icon"></div>
+                                 <div class="notifi_content">
+                                    <h4>Johnny Depp</h4>
+                                    <span>Today at 04:48 PM</span>
+                                    <p>Atlas updated appointments status</p>
+                                 </div>
+                              </div>
+                           </li>
+                           <li>
+                              <div class="notifi_details">
+                                 <div class="noitifi_img"><img src="./images/noti_bell.png" alt="icon"></div>
+                                 <div class="notifi_content">
+                                    <h4>Johnny Depp</h4>
+                                    <span>Today at 04:48 PM</span>
+                                    <p>Atlas updated appointments status</p>
+                                 </div>
+                              </div>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <!-- Notifications -->
+            </div>
+         </div>
+      </div>
+      <!-- Script  -->
+      <script src="js/jquery.min.js"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js"></script> -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+
+      <!--date picker-->
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+      <script>
+         $(function () {
+         $("#datepicker,#datepicker2,#datepicker3,#datepicker4,#datepicker5,#datepicker6,#datepicker7,#datepicker8").datepicker({ 
+               autoclose: true, 
+               todayHighlight: true
+         }).datepicker('update', new Date());
+         
+         });
+         
+      </script>
+   </body>
+</html>

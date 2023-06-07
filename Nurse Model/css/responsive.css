@@ -1,0 +1,368 @@
+ Mobile */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+.login_group_input.mutli_order input:first-child{margin-bottom: 20px;}
+#register .login_group_input.mutli_order input{
+width: 100% !important;
+}
+.login_group_input.mutli_order {
+flex-direction: column !important;}
+.bgm_grey_panel {
+margin-left: 5px;
+margin-right: 10px;
+max-width: calc(100% - 10px);
+}
+.typedetails_panel ul li {
+width: 50%;}     
+ul#innertab_pill li {
+width: 100%;}   
+.immunization_title {
+    flex-direction: column;
+}
+
+.radiogroup_alts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.immunization_title span {
+    margin-bottom: 10px;
+}
+.immunization_title {
+    flex-direction: column;
+}
+.innertavstitle_group > label {
+    margin-bottom: 10px;
+}
+.requestdetails_appointment ul {
+    padding: 10px;
+}
+.radiogroup_alts.atlas_planing .radio_input {
+    width: 50%;
+}
+.end_submitform {
+    margin: 15px 0;
+}
+
+.btn_md {
+    width: 150px;
+    height: 40px;
+}
+
+.btn_mmd {
+    min-width: 150px;
+    height: 40px;
+    padding: 0 !important;
+}
+.radiogroup_alts.atlas_planing {flex-wrap: wrap;}
+.altas_forms.forms_viewlays > label {margin-bottom: 10px;}
+.typedetails_panel ul li label {font-size: 12px;}
+.typedetails_panel ul li span {font-size: 14px;}
+.bgm_grey_panel.panellist_aware p {margin: auto;line-height: normal;font-size: 14px;}
+    /* END */
+}
+
+@media only screen and (min-width: 320px) and (max-width: 490px){
+    .add_calendar_req {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .end_submitform {
+        display: flex;
+    }
+    .add_calendar_req button {
+        margin: 0 0 5px 0 !important;
+    }
+    .typedetails_panel ul li {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .bgm_grey_panel.panellist_aware.advi_consil h3 {
+        font-size: 16px;
+    }    
+    .signature_lay {
+        width: 100% !important;
+    }
+    .typedetails_panel ul {
+        padding: 5px;
+    }
+    .altas_forms label, .altas_forms input {
+        width: 100%;
+        float: left;
+    }
+    .altas_forms select {
+        width: 100%;
+    }
+    .altas_forms i {
+        position: absolute !important;
+        right: 0% !important;
+        top: 31px;
+        left: 90% !important;
+    }
+    /*END*/
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+    ul#innertab_pill li {
+        width: auto;}
+    /* END */
+}
+
+/* M2T Device */
+@media only screen and (min-width: 320px) and (max-width: 1000px){
+    .login_banner {
+        display: none;
+    }
+    .signature_lay {
+        width: 47%;
+    }
+    .login_group_input[_ngcontent-qnt-c24] input[_ngcontent-qnt-c24] {
+        height: 50px;
+        font-size: 16px;}
+    .login_forms {
+        max-width: 100%;
+    }
+    .wrapper_guard {
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    min-height: 100vh;
+
+    }
+    .myaside {
+        position: absolute;
+        left: -100%;
+        transition: all 0.2s;
+    }.tabs_immuzations ul.nav.nav-tabs li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .myheader {
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+    }
+    
+    .myart_layerout {
+        width: 100%;
+        padding: 10px;
+        margin-left: 0;
+    }
+    .wayout_panel {
+        padding: 10px;
+    }
+
+    .allergies_wra input {
+        max-width: 100%;
+        width: 80%;
+    }
+    .notification_wrapper {
+        position: absolute;
+        width: 100%;
+        left: unset;
+        right: 100%;
+    }
+    span.mob_burger {
+        margin-left: 20px;
+        margin-right: 0;
+        font-size: 22px;   display: block;
+        color: #0d1426;
+    }
+    .myaside.mob_dialog_open {
+        left: 0;
+        z-index: 99;
+    }
+    span.mob_burger {
+        margin-left: 20px;
+        margin-right: 0;
+        font-size: 22px;
+        color: #0d1426;
+    }
+    
+    span.hamburger_menu {
+        display: none;
+    }
+    
+    span.mob_hamburger_close {
+        color: #fff;
+        font-size: 22px;
+        margin-right: 15px;display: block;
+    }
+    
+    /* END */
+}
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
+    .tabs_immuzations ul.nav.nav-tabs li a {
+        padding: 6px 24px;
+        font-size: 14px;
+    }
+    .tabs_immuzations ul.nav.nav-tabs li {
+        margin-right: 12px;
+    }
+    .allergies_wra input {
+        max-width: 100%;
+        width: 80%;
+    }
+    ul#innertab_pill li {
+        width: auto;}
+    /*END*/
+}
+@media only screen and (min-width: 1201px) and (max-width: 1350px){
+    ul#innertab_pill li {
+        width: auto;}
+        .allergies_wra input {
+            max-width: 100%;
+            width: 80%;
+        }
+    /*END*/
+}
+@media only screen and (min-width: 1000px){
+    .superversion_layout.halfversion img.fullversion_logo {
+        display: none;
+    }
+    
+    .superversion_layout.halfversion .miniversion_logo {
+        display: block;
+    }
+    
+    .superversion_layout.halfversion .menubar_lister ul li a span {
+        display: none;
+    }
+    
+    .superversion_layout.halfversion ul.submenu_bar {
+        padding-left: 0;
+    }
+    
+    .superversion_layout.halfversion .menubar_lister.normal_menus ul li a {
+        padding-left: 15px;
+    }
+    .superversion_layout.halfversion .menubar_lister h2 {
+        display: none;
+    }
+    
+    .superversion_layout.halfversion .menubar_lister.main_menu ul li a {
+        padding-left: 15px;
+    }
+    
+    .superversion_layout.halfversion .myaside {
+        width: 100px;
+    }
+.halfversion.superversion_layout .aside_copyrights {
+    display: none;
+}
+
+/* END */
+}
+
+
+   /*---------------------------------------------------------Nurse Module Start----------------------------------------------------------*/
+   
+@media only screen and (min-width: 320px) and (max-width: 500px){
+    .new_header .myheader{flex-direction: column;padding: 15px;height: unset;}
+    .new_header .myart_layerout{min-height: calc(100vh - 100px);top: 100px;}
+    .new_header .myheader h2{margin-bottom: 10px;}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .head_flex h2{margin-bottom: 20px;margin-top: 10px;}
+    .head_flex{flex-direction: column;align-items: flex-start;}
+}
+
+/*sri start*/
+@media only screen and (max-width: 570px){
+    .date {width: 100%;padding: 2%;position: unset;margin-bottom: 30px;}
+}
+@media only screen and (max-width: 767px){
+    .nurse_detail .panellist_aware p {font-size: 16px !important;line-height: 36px !important;}
+}
+@media only screen and (max-width: 767px) and (min-width: 320px){
+    .nurse_detail .panellist_aware {width: unset;}
+}
+/*sri end*/
+   /*---------------------------------------------------------Nurse Module End------------------------------*/
+   
+@media only screen and (max-width: 767px) {
+.nurse_popup_body {
+    width: 100%;
+    max-width: 100%;
+}
+.typedetails_panel ul li label {
+    display: block;
+    margin-bottom: 25px;
+	width:100%;
+}
+.altas_forms >p {
+    word-break: break-all;
+}
+.viewsdesc_tions label {
+    margin-bottom: 10px;
+}
+.change_formpassword.form-pass-chg .altas_forms.views_forms {
+    flex-direction: column;
+    align-items: start;
+}
+.end_submitform.end-bck {
+    align-items: center;
+    justify-content: center;
+}
+}
+   
+   
+
+
+/* 12Ab_Todays Appointment_Followup booster */
+@media only screen and (max-width: 767px) {
+
+    .head-ryt-inner {
+        margin: 10px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 991px) {
+.lab-g {
+    margin-bottom: 9px;
+}
+
+.app-form-gg>div {
+    margin-bottom: 15px;
+}
+
+}
+
+@media only screen and (max-width: 1200px) {
+.col-lg-6.col-md-12.col-xs-12.col-sm-12.pers-bx-g.m-0 {
+    display: none;
+}
+}
+/* end 12Ab_Todays Appointment_Followup booster */
+
+
+
+@media screen and (max-width:1200px)
+{
+    .altas_forms {
+        display: block;
+    }
+    .altas_forms.cust-form-ff.d-flex-vac {
+        display: flex;
+    }
+}
+@media screen and (max-width:600px)
+{
+    .radiogroup_alts .radio_input:nth-child(3) {
+        width: 50%;
+    }
+    body .bootstrap-datetimepicker-widget
+        {
+           left:50px !important
+        }
+}
+
+
+
+ 
